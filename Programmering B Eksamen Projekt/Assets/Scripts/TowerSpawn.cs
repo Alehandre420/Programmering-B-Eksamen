@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pathfinding : MonoBehaviour
+public class TowerSpawn : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        print("hello farmor");
+        
     }
-    
+
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }
