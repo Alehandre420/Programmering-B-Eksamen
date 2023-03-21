@@ -5,9 +5,14 @@ using UnityEngine;
 public class Pathfinding : MonoBehaviour
 {
     HomeStats hs;
+    EnemyStats stats;
+
+    float speed;
+    float worth;
+    float damage;
+
     public GameObject[] path;
-    int index = 0;
-    public float speed = 2;
+    int index;
     float currentLerpTime;
     Vector3 startPos;
 
@@ -15,8 +20,15 @@ public class Pathfinding : MonoBehaviour
     void Start()
     {
         hs = FindObjectOfType<HomeStats>();
+        stats = FindObjectOfType<EnemyStats>();
         path = GameObject.FindGameObjectsWithTag("Path");
-        startPos = transform.position;
+
+        //getting the stats from the enemy
+        speed = stats.speed;
+        damage = stats.damage;
+
+        index = path.Length - 1;
+        startPos = path[index].transform.position;
         currentLerpTime = 0f;
     }
     
@@ -28,7 +40,7 @@ public class Pathfinding : MonoBehaviour
         {
             currentLerpTime -= speed;
             startPos = path[index].transform.position;
-            index++;
+            index--;
         }
 
         float perc = currentLerpTime / speed;
@@ -36,20 +48,21 @@ public class Pathfinding : MonoBehaviour
         if (transform.position == path[index].transform.position)
         {
             startPos = transform.position;
-            index++;
+            index--;
             currentLerpTime = 0f;
         }
 
+        Vector3 newPos = new Vector3(transform.position.x, 1.5f, transform.position.z);
+        transform.position = newPos;
 
-        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Home"))
         {
-            hs.health--;
-            Destroy(this);
+            hs.health = hs.health - damage;
+            Destroy(gameObject);
         }
     }
 }
