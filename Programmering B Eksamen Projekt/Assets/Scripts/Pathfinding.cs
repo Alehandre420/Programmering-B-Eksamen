@@ -54,7 +54,6 @@ public class Pathfinding : MonoBehaviour
 
         Vector3 newPos = new Vector3(transform.position.x, 1.5f, transform.position.z);
         transform.position = newPos;
-
     }
 
     private void OnTriggerEnter(Collider other)
