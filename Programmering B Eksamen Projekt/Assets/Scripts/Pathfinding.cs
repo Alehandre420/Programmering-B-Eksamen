@@ -60,8 +60,9 @@ public class Pathfinding : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Home"))
         {
-            hs.health = hs.health - damage;
+            hs.health -= damage;
             Destroy(gameObject);
+            print("test");
         }
     }
 }

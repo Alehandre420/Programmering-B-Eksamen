@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
 {
-    public float health;
+    public float maxHealth;
+    public float currentHealth;
     public float speed;
     public float worth;
     public float damage;
@@ -14,13 +15,14 @@ public class EnemyStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentHealth = maxHealth;
         gm = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (health <= 0)
+        if (currentHealth <= 0)
         {
             gm.money += worth;
             Destroy(gameObject);
