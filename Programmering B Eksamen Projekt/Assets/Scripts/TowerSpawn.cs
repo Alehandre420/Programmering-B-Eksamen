@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class TowerSpawn : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject towerPrefab;
+    public GameManager gm;
+    public TowerScript ts;
+
+    private void OnMouseDown()
     {
-        
+        if (gm.money >= ts.cost)
+        {
+            GameObject tower = Instantiate(towerPrefab, transform);
+            tower.transform.localPosition = new Vector3(0, 1, 0);
+        }
     }
 
     // Update is called once per frame
