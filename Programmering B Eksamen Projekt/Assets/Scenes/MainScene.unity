@@ -232,8 +232,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -444,8 +444,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -558,8 +558,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -770,8 +770,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -1254,8 +1254,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -1368,8 +1368,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -1694,8 +1694,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22eed140590b51146ae8a99282f6146d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   money: 0
 --- !u!4 &1008871609
 Transform:
@@ -1905,8 +1905,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -2019,8 +2019,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -2133,8 +2133,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -2345,8 +2345,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -2459,8 +2459,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -2573,8 +2573,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -2687,8 +2687,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -2800,8 +2800,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49404fbb2a9bc1e4a8d65bd3e4cb2127, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   health: 100
 --- !u!1 &1537922151
 GameObject:
@@ -3169,8 +3169,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -3283,8 +3283,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -3397,8 +3397,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -3511,8 +3511,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -3821,8 +3821,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -4131,8 +4131,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -4245,8 +4245,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -4359,8 +4359,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -4865,8 +4865,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -4979,8 +4979,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -5191,8 +5191,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -5305,8 +5305,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -5419,8 +5419,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
