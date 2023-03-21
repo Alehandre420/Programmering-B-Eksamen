@@ -8,7 +8,7 @@ public class TowerScript : MonoBehaviour
     public float atkSpeed;
     public float cost;
     public List<GameObject> enemyList;
-    public EnemyStats enemyStats;
+    public List<float> enemyHealth;
 
     bool enemyInRadius;
     bool isInterrupted;
@@ -23,6 +23,10 @@ public class TowerScript : MonoBehaviour
         if (other.CompareTag("Enemy") && !enemyList.Contains(other.gameObject))
         {
             enemyList.Add(other.gameObject);
+        }
+        for (int i = 0; i < enemyList.Count; i++)
+        {
+            enemyHealth.Add(enemyList[i].GetComponent<EnemyStats>().health);
         }
         if (other.CompareTag("Enemy"))
         {
@@ -42,11 +46,11 @@ public class TowerScript : MonoBehaviour
         }
     }
 
-    IEnumerator attackEnemy()
+    IEnumerator attackEnemy(int i)
     {
         isInterrupted = true;
         print("gtims");
-        //remove 10 health from enemy in list
+        enemyHealth[i] -= 5;
         yield return new WaitForSeconds(2);
         isInterrupted = false;
     }
@@ -58,7 +62,7 @@ public class TowerScript : MonoBehaviour
         {
             if (!isInterrupted)
             {
-                StartCoroutine(attackEnemy());
+                StartCoroutine(attackEnemy(i));
             }
         }
     }
