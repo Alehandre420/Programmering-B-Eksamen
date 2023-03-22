@@ -10,6 +10,8 @@ public class Pathfinding : MonoBehaviour
     float speed;
     float worth;
     float damage;
+    public bool bezier;
+    public bool bezierLerp;
 
     public GameObject[] path;
     int index;
@@ -36,21 +38,50 @@ public class Pathfinding : MonoBehaviour
     void Update()
     {
         currentLerpTime += Time.deltaTime;
-        if (currentLerpTime > speed)
-        {
-            currentLerpTime -= speed;
-            startPos = path[index].transform.position;
-            index--;
-        }
+        
 
-        float perc = currentLerpTime / speed;
-        transform.position = Vector3.Lerp(startPos, path[index].transform.position, perc);
-        if (transform.position == path[index].transform.position)
+        if (!bezierLerp)
         {
-            startPos = transform.position;
-            index--;
-            currentLerpTime = 0f;
+            float perc = currentLerpTime / speed;
+            transform.position = Vector3.Lerp(startPos, path[index].transform.position, perc);
+            if (transform.position == path[index].transform.position)
+            {
+                startPos = transform.position;
+                index--;
+                currentLerpTime = 0f;
+
+                if (bezier)
+                {
+                    bezierLerp = true;
+                    bezier = false;
+                }
+            }
+
         }
+        else if (bezierLerp)
+        {
+            float perc = currentLerpTime / speed / 1.5f;
+            Vector3 A = Vector3.Lerp(startPos, path[index].transform.position, perc);
+            Vector3 B = Vector3.Lerp(path[index].transform.position, path[index - 1].transform.position, perc);
+            transform.position = Vector3.Lerp(A, B, perc);
+            if (transform.position == path[index - 1].transform.position)
+            {
+                startPos = transform.position;
+                index = index - 2;
+                currentLerpTime = 0f;
+
+                if (!bezier)
+                {
+                    bezierLerp = false;
+                }
+                else if (bezier)
+                {
+                    bezierLerp = true;
+                    bezier = false;
+                }
+            }
+        }
+        
 
         Vector3 newPos = new Vector3(transform.position.x, stats.scale, transform.position.z);
         transform.position = newPos;
@@ -62,6 +93,11 @@ public class Pathfinding : MonoBehaviour
         {
             hs.health -= damage;
             Destroy(gameObject);
+        }
+
+        if (other.gameObject.CompareTag("Bezier"))
+        {
+            bezier = true;
         }
     }
 }
