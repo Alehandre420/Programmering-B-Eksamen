@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -232,8 +232,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -444,8 +444,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -558,8 +558,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -770,8 +770,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -1254,8 +1254,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -1368,8 +1368,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -1694,8 +1694,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22eed140590b51146ae8a99282f6146d, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   money: 0
 --- !u!4 &1008871609
 Transform:
@@ -1763,9 +1763,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 30.2
-  orthographic: 0
-  orthographic size: 5
+  field of view: 44.1
+  orthographic: 1
+  orthographic size: 21.03
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1789,7 +1789,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033115327}
   m_LocalRotation: {x: 0.10261357, y: 0.8544534, z: -0.18473935, w: 0.4746065}
-  m_LocalPosition: {x: -56.6, y: 29.7, z: 50.1}
+  m_LocalPosition: {x: -49.6, y: 29.7, z: 27.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1905,8 +1905,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -2019,8 +2019,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -2133,8 +2133,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -2345,8 +2345,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -2459,8 +2459,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -2573,8 +2573,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -2687,8 +2687,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -2800,8 +2800,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49404fbb2a9bc1e4a8d65bd3e4cb2127, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   health: 100
 --- !u!1 &1537922151
 GameObject:
@@ -2922,7 +2922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 519116998396541811, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 519116998396541811, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2930,7 +2930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 519116998396541811, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 519116998396541811, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2942,11 +2942,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 519116998396541811, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 519116998396541811, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2535320269621710823, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2535320269621710823, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2535320269621710823, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2963505481371924280, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
+      propertyPath: m_Value
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2963505481371924280, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
+      propertyPath: m_MaxValue
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2963505481371924280, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
+      propertyPath: m_Direction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2963505481371924280, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
+      propertyPath: m_WholeNumbers
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4332073003461776072, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.064423755
+      objectReference: {fileID: 0}
+    - target: {fileID: 4332073003461776072, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.03e-13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4332073003461776072, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0000038147
       objectReference: {fileID: 0}
     - target: {fileID: 5220575180960570589, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3169,8 +3209,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -3283,8 +3323,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -3397,8 +3437,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -3511,8 +3551,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -3821,8 +3861,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -4131,8 +4171,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -4245,8 +4285,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -4359,8 +4399,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -4865,8 +4905,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -4979,8 +5019,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -5191,8 +5231,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -5305,8 +5345,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
@@ -5419,8 +5459,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eed5ae6aa66edf4b8230cf77cd32333, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
