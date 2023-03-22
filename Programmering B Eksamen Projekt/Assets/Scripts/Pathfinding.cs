@@ -52,7 +52,7 @@ public class Pathfinding : MonoBehaviour
             currentLerpTime = 0f;
         }
 
-        Vector3 newPos = new Vector3(transform.position.x, 1.5f, transform.position.z);
+        Vector3 newPos = new Vector3(transform.position.x, stats.scale, transform.position.z);
         transform.position = newPos;
     }
 
@@ -62,7 +62,6 @@ public class Pathfinding : MonoBehaviour
         {
             hs.health -= damage;
             Destroy(gameObject);
-            print("test");
         }
     }
 }

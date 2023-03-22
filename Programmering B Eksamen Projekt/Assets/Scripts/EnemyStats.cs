@@ -9,6 +9,7 @@ public class EnemyStats : MonoBehaviour
     public float speed;
     public float worth;
     public float damage;
+    public float scale;
 
     GameManager gm;
 
@@ -17,6 +18,8 @@ public class EnemyStats : MonoBehaviour
     {
         currentHealth = maxHealth;
         gm = FindObjectOfType<GameManager>();
+
+        transform.localScale = new Vector3(scale, scale, scale);
     }
 
     // Update is called once per frame
