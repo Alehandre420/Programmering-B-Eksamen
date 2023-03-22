@@ -49,8 +49,8 @@ public class TowerScript : MonoBehaviour
     IEnumerator attackEnemy(int i)
     {
         isInterrupted = true;
-        print("gtims");
         enemyHealth[i] -= 5;
+        print(enemyHealth[i]);
         yield return new WaitForSeconds(2);
         isInterrupted = false;
     }
@@ -58,6 +58,11 @@ public class TowerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        for (int i = 0; i < enemyList.Count; i++)
+        {
+            enemyList[i].GetComponent<EnemyStats>().currentHealth = enemyHealth[i];
+        }
+
         for (int i = 0; i < enemyList.Count; i++)
         {
             if (!isInterrupted)
