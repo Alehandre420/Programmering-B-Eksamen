@@ -73,6 +73,7 @@ public class TowerScript : MonoBehaviour
             if (enemyList[i] == null)
             {
                 enemyList.RemoveAt(i);
+                enemyHealth.RemoveAt(i);
             }
         }
         if (isAOE)
