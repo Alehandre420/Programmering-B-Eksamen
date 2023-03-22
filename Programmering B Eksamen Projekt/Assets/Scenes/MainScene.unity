@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 15428184}
   - component: {fileID: 15428183}
   - component: {fileID: 15428186}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (15)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -237,6 +237,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &72848541
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,7 +351,7 @@ GameObject:
   - component: {fileID: 223421766}
   - component: {fileID: 223421765}
   - component: {fileID: 223421768}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (36)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -449,6 +452,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &280778581
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,7 +468,7 @@ GameObject:
   - component: {fileID: 280778584}
   - component: {fileID: 280778583}
   - component: {fileID: 280778586}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (39)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -563,6 +569,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &356085221
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +683,7 @@ GameObject:
   - component: {fileID: 365921511}
   - component: {fileID: 365921510}
   - component: {fileID: 365921513}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (21)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -775,6 +784,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &385778138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,7 +1170,7 @@ GameObject:
   - component: {fileID: 564097501}
   - component: {fileID: 564097500}
   - component: {fileID: 564097503}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (12)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -1259,6 +1271,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &713282809
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,7 +1287,7 @@ GameObject:
   - component: {fileID: 713282812}
   - component: {fileID: 713282811}
   - component: {fileID: 713282814}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (41)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -1373,6 +1388,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &804433102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,7 +1827,7 @@ GameObject:
   - component: {fileID: 1058313443}
   - component: {fileID: 1058313442}
   - component: {fileID: 1058313445}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (10)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -1910,6 +1928,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1185127295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1923,7 +1944,7 @@ GameObject:
   - component: {fileID: 1185127298}
   - component: {fileID: 1185127297}
   - component: {fileID: 1185127300}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (5)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -2024,6 +2045,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1187757634
 GameObject:
   m_ObjectHideFlags: 0
@@ -2037,7 +2061,7 @@ GameObject:
   - component: {fileID: 1187757637}
   - component: {fileID: 1187757636}
   - component: {fileID: 1187757639}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (34)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -2138,6 +2162,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1217494112
 GameObject:
   m_ObjectHideFlags: 0
@@ -2249,7 +2276,7 @@ GameObject:
   - component: {fileID: 1242848491}
   - component: {fileID: 1242848490}
   - component: {fileID: 1242848493}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (33)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -2350,6 +2377,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1307158191
 GameObject:
   m_ObjectHideFlags: 0
@@ -2363,7 +2393,7 @@ GameObject:
   - component: {fileID: 1307158194}
   - component: {fileID: 1307158193}
   - component: {fileID: 1307158196}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (27)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -2464,6 +2494,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1315640276
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,7 +2510,7 @@ GameObject:
   - component: {fileID: 1315640279}
   - component: {fileID: 1315640278}
   - component: {fileID: 1315640281}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (32)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -2578,6 +2611,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1393384286
 GameObject:
   m_ObjectHideFlags: 0
@@ -2591,7 +2627,7 @@ GameObject:
   - component: {fileID: 1393384289}
   - component: {fileID: 1393384288}
   - component: {fileID: 1393384291}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (38)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -2692,6 +2728,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1523487891
 GameObject:
   m_ObjectHideFlags: 0
@@ -3113,7 +3152,7 @@ GameObject:
   - component: {fileID: 1586927135}
   - component: {fileID: 1586927134}
   - component: {fileID: 1586927137}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (40)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -3214,6 +3253,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1669230869
 GameObject:
   m_ObjectHideFlags: 0
@@ -3227,7 +3269,7 @@ GameObject:
   - component: {fileID: 1669230872}
   - component: {fileID: 1669230871}
   - component: {fileID: 1669230874}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (13)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -3328,6 +3370,107 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!1 &1678052280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1678052284}
+  - component: {fileID: 1678052283}
+  - component: {fileID: 1678052282}
+  - component: {fileID: 1678052281}
+  m_Layer: 0
+  m_Name: Water
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &1678052281
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678052280}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1678052282
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678052280}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 728a68655cd657f42aed46478ceaa9e2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1678052283
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678052280}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1678052284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678052280}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19.83, y: -0.01, z: 43.177742}
+  m_LocalScale: {x: 16.69, y: 1, z: 31.85}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1716848181
 GameObject:
   m_ObjectHideFlags: 0
@@ -3341,7 +3484,7 @@ GameObject:
   - component: {fileID: 1716848184}
   - component: {fileID: 1716848183}
   - component: {fileID: 1716848186}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (43)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -3442,6 +3585,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1738373594
 GameObject:
   m_ObjectHideFlags: 0
@@ -3455,7 +3601,7 @@ GameObject:
   - component: {fileID: 1738373597}
   - component: {fileID: 1738373596}
   - component: {fileID: 1738373599}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (37)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -3556,6 +3702,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1738930028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3765,7 +3914,7 @@ GameObject:
   - component: {fileID: 1838661315}
   - component: {fileID: 1838661314}
   - component: {fileID: 1838661317}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -3866,6 +4015,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1964587563
 GameObject:
   m_ObjectHideFlags: 0
@@ -4075,7 +4227,7 @@ GameObject:
   - component: {fileID: 1966672206}
   - component: {fileID: 1966672205}
   - component: {fileID: 1966672208}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (8)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -4176,6 +4328,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &2038901766
 GameObject:
   m_ObjectHideFlags: 0
@@ -4189,7 +4344,7 @@ GameObject:
   - component: {fileID: 2038901769}
   - component: {fileID: 2038901768}
   - component: {fileID: 2038901771}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (20)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -4290,6 +4445,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &2039590403
 GameObject:
   m_ObjectHideFlags: 0
@@ -4303,7 +4461,7 @@ GameObject:
   - component: {fileID: 2039590406}
   - component: {fileID: 2039590405}
   - component: {fileID: 2039590408}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (44)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -4404,6 +4562,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &2039658181
 GameObject:
   m_ObjectHideFlags: 0
@@ -4809,7 +4970,7 @@ GameObject:
   - component: {fileID: 2058297360}
   - component: {fileID: 2058297359}
   - component: {fileID: 2058297362}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (28)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -4910,6 +5071,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &2070782385
 GameObject:
   m_ObjectHideFlags: 0
@@ -4923,7 +5087,7 @@ GameObject:
   - component: {fileID: 2070782388}
   - component: {fileID: 2070782387}
   - component: {fileID: 2070782390}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (4)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -5024,6 +5188,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &2078402596
 GameObject:
   m_ObjectHideFlags: 0
@@ -5135,7 +5302,7 @@ GameObject:
   - component: {fileID: 2081279215}
   - component: {fileID: 2081279214}
   - component: {fileID: 2081279217}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (6)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -5236,6 +5403,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &2084053762
 GameObject:
   m_ObjectHideFlags: 0
@@ -5249,7 +5419,7 @@ GameObject:
   - component: {fileID: 2084053765}
   - component: {fileID: 2084053764}
   - component: {fileID: 2084053767}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (17)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -5350,6 +5520,9 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &2141572419
 GameObject:
   m_ObjectHideFlags: 0
@@ -5363,7 +5536,7 @@ GameObject:
   - component: {fileID: 2141572422}
   - component: {fileID: 2141572421}
   - component: {fileID: 2141572424}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile (35)
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -5464,3 +5637,6 @@ MonoBehaviour:
   towerPrefab: {fileID: 305460944364300898, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
   gm: {fileID: 1008871608}
   ts: {fileID: 2906357016343219807, guid: 94db65b6d318b29468048f5ea648cf20, type: 3}
+  tile:
+    serializedVersion: 2
+    m_Bits: 64
