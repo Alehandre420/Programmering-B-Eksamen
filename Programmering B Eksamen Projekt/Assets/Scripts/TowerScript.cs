@@ -5,32 +5,22 @@ using UnityEngine;
 public class TowerScript : MonoBehaviour
 {
     public float damage;
+    float aoeDamage;
+    float singleDamage;
     public float atkSpeed;
     public float cost;
     public List<GameObject> enemyList;
     public List<float> enemyHealth;
-
-    bool enemyInRadius;
+    public bool isAOE;
     bool isInterrupted;
 
-    private void Awake()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Enemy") && !enemyList.Contains(other.gameObject))
         {
             enemyList.Add(other.gameObject);
-        }
-        for (int i = 0; i < enemyList.Count; i++)
-        {
-            enemyHealth.Add(enemyList[i].GetComponent<EnemyStats>().currentHealth);
-        }
-        if (other.CompareTag("Enemy"))
-        {
-            enemyInRadius = true;
+            enemyHealth.Add(other.GetComponent<EnemyStats>().currentHealth);
         }
     }
 
@@ -39,36 +29,55 @@ public class TowerScript : MonoBehaviour
         if (other.CompareTag("Enemy") && enemyList.Contains(other.gameObject))
         {
             enemyList.Remove(other.gameObject);
-        }
-        if (other.CompareTag("Enemy"))
-        {
-            enemyInRadius = false;
+            enemyHealth.Remove(other.GetComponent<EnemyStats>().currentHealth);
         }
     }
 
-    IEnumerator attackEnemy(int i)
+    IEnumerator attackEnemy(int i, float tempDamage)
     {
         isInterrupted = true;
-        enemyHealth[i] -= 5;
-        print(enemyHealth[i]);
-        yield return new WaitForSeconds(2);
+        enemyHealth[i] -= tempDamage;
+        enemyList[i].GetComponent<EnemyStats>().currentHealth = enemyHealth[i];
+        if (enemyHealth[i] <= 0)
+        {
+            enemyHealth.Remove(enemyHealth[i]);
+            enemyList.Remove(enemyList[i]);
+        }
+        yield return new WaitForSeconds(2/atkSpeed);
         isInterrupted = false;
+    }
+
+    private void aoeAttack(float tempDamage)
+    {
+        for (int i = 0; i < enemyList.Count; i++)
+        {
+            if (!isInterrupted)
+            {
+                StartCoroutine(attackEnemy(i, tempDamage));
+            }
+        }
+    }
+    private void singleAttack(float tempDamage)
+    {
+        if (!isInterrupted && enemyList.Count > 0)
+        {
+            StartCoroutine(attackEnemy(0, tempDamage));
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        for (int i = 0; i < enemyList.Count; i++)
+        if (isAOE)
         {
-            enemyList[i].GetComponent<EnemyStats>().currentHealth = enemyHealth[i];
+            aoeDamage = damage / 2;
+            aoeAttack(aoeDamage);
         }
-
-        for (int i = 0; i < enemyList.Count; i++)
+        else
         {
-            if (!isInterrupted)
-            {
-                StartCoroutine(attackEnemy(i));
-            }
+            singleDamage = damage * 2;
+            singleAttack(singleDamage);
         }
+        
     }
 }

@@ -111,6 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b58cd38af86a264ca36be2bc81ef181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
-  atkSpeed: 0
+  damage: 2
+  atkSpeed: 1
   cost: 0
+  enemyList: []
+  enemyHealth: []
