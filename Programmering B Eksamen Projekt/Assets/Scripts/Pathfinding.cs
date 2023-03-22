@@ -92,7 +92,7 @@ public class Pathfinding : MonoBehaviour
         if (other.gameObject.CompareTag("Home"))
         {
             hs.health -= damage;
-            Destroy(gameObject);
+            stats.currentHealth = 0;
         }
 
         if (other.gameObject.CompareTag("Bezier"))
