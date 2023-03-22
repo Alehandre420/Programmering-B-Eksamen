@@ -68,6 +68,13 @@ public class TowerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        for (int i = 0; i < enemyList.Count; i++)
+        {
+            if (enemyList[i] == null)
+            {
+                enemyList.RemoveAt(i);
+            }
+        }
         if (isAOE)
         {
             aoeDamage = damage / 2;
