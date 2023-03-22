@@ -8,6 +8,7 @@ TagManager:
   - Tile
   - Path
   - Enemy
+  - Bezier
   layers:
   - Default
   - TransparentFX
