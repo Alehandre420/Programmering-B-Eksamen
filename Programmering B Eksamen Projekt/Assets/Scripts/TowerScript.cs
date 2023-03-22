@@ -26,7 +26,7 @@ public class TowerScript : MonoBehaviour
         }
         for (int i = 0; i < enemyList.Count; i++)
         {
-            enemyHealth.Add(enemyList[i].GetComponent<EnemyStats>().health);
+            enemyHealth.Add(enemyList[i].GetComponent<EnemyStats>().currentHealth);
         }
         if (other.CompareTag("Enemy"))
         {
