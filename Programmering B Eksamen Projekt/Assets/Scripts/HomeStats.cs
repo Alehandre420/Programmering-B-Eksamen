@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class HomeStats : MonoBehaviour
 {
     public float health = 100;
+    public TMP_Text hp;
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +17,7 @@ public class HomeStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        hp.text = health.ToString();
     }
 
    

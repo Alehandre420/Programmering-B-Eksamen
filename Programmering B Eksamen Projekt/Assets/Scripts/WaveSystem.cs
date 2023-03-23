@@ -52,6 +52,7 @@ public class WaveSystem : MonoBehaviour
         {
             currentWave += 1;
         }
+        gm.money += Mathf.Round(5 * currentWave / 3);
         waiting = false;
     }
 
@@ -64,6 +65,5 @@ public class WaveSystem : MonoBehaviour
             enemies.Add(enemy);
             yield return new WaitForSeconds(0.8f);
         }
-        gm.money += 10 + 20 * currentWave;
     }
 }

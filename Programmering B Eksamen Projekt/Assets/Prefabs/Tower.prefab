@@ -116,7 +116,7 @@ MonoBehaviour:
   atkSpeed: 1
   aoeRange: 15
   singleRange: 30
-  cost: 0
+  cost: 30
   towerMask:
     serializedVersion: 2
     m_Bits: 128
