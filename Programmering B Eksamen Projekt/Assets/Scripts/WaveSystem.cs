@@ -1,19 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class WaveSystem : MonoBehaviour
 {
     public GameObject basic;
     public List<GameObject> enemies;
     int currentWave = 1;
+    public TMP_Text wave;
 
     bool ongoingWave;
+    bool waiting;
+    GameManager gm;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        gm = FindObjectOfType<GameManager>();
         
     }
 
@@ -25,11 +29,30 @@ public class WaveSystem : MonoBehaviour
         {
             StartCoroutine(SpawnAndWait(enemyCount));
         }
-        else if (enemies.Count <= 0)
+        else if (enemies.Count <= 0 && !waiting)
         {
-            ongoingWave = false;
+            StartCoroutine(waitBetweenWaves(5));
         }
 
+        wave.text = $"wave {currentWave.ToString()} / 100";
+
+        if (currentWave >= 100)
+        {
+            print("you did it");
+
+        }
+    }
+
+    private IEnumerator waitBetweenWaves(float waitTime)
+    {
+        waiting = true;
+        yield return new WaitForSeconds(waitTime);
+        ongoingWave = false;
+        if (currentWave < 100)
+        {
+            currentWave += 1;
+        }
+        waiting = false;
     }
 
     private IEnumerator SpawnAndWait(float amount)
@@ -39,8 +62,8 @@ public class WaveSystem : MonoBehaviour
         {
             GameObject enemy = Instantiate(basic, transform);
             enemies.Add(enemy);
-            yield return new WaitForSeconds(1.3f);
+            yield return new WaitForSeconds(0.8f);
         }
-        currentWave += 1;
+        gm.money += 10 + 20 * currentWave;
     }
 }
