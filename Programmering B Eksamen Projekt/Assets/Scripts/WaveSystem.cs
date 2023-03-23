@@ -9,6 +9,7 @@ public class WaveSystem : MonoBehaviour
     int currentWave = 1;
 
     bool ongoingWave;
+    bool waiting;
 
     // Start is called before the first frame update
     void Start()
@@ -25,11 +26,19 @@ public class WaveSystem : MonoBehaviour
         {
             StartCoroutine(SpawnAndWait(enemyCount));
         }
-        else if (enemies.Count <= 0)
+        else if (enemies.Count <= 0 && !waiting)
         {
-            ongoingWave = false;
+            StartCoroutine(waitBetweenWaves(5));
         }
 
+    }
+
+    private IEnumerator waitBetweenWaves(float waitTime)
+    {
+        waiting = true;
+        yield return new WaitForSeconds(waitTime);
+        ongoingWave = false;
+        waiting = false;
     }
 
     private IEnumerator SpawnAndWait(float amount)
@@ -39,7 +48,7 @@ public class WaveSystem : MonoBehaviour
         {
             GameObject enemy = Instantiate(basic, transform);
             enemies.Add(enemy);
-            yield return new WaitForSeconds(1.3f);
+            yield return new WaitForSeconds(0.8f);
         }
         currentWave += 1;
     }
