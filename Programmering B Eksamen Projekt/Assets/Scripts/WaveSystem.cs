@@ -47,12 +47,15 @@ public class WaveSystem : MonoBehaviour
     {
         waiting = true;
         yield return new WaitForSeconds(waitTime);
-        ongoingWave = false;
-        if (currentWave < 100)
+        if (enemies.Count <= 0)
         {
-            currentWave += 1;
+            ongoingWave = false;
+            if (currentWave < 100)
+            {
+                currentWave += 1;
+            }
+            gm.money += Mathf.Round(5 * currentWave / 3);
         }
-        gm.money += Mathf.Round(5 * currentWave / 3);
         waiting = false;
     }
 
