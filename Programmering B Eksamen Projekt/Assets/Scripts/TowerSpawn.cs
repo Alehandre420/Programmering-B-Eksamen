@@ -11,10 +11,7 @@ public class TowerSpawn : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (gm.money >= ts.cost)
-        {
-            
-        }
+        
     }
 
     // Update is called once per frame
@@ -22,17 +19,18 @@ public class TowerSpawn : MonoBehaviour
     {
         Ray rayToMouse = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        
 
-        if (Physics.Raycast(rayToMouse, out hit, Mathf.Infinity, tile) && Input.GetMouseButtonDown(0))
+        if (gm.money >= ts.cost)
         {
-            if (hit.transform.childCount != 0)
-                return;
+            if (Physics.Raycast(rayToMouse, out hit, Mathf.Infinity, tile) && Input.GetMouseButtonDown(0))
+            {
+                if (hit.transform.childCount != 0)
+                    return;
 
-            GameObject tower = Instantiate(towerPrefab, hit.transform);
-            tower.transform.localPosition = new Vector3(0, 1, 0);
+                GameObject tower = Instantiate(towerPrefab, hit.transform);
+                tower.transform.localPosition = new Vector3(0, 1, 0);
+                gm.money = gm.money - ts.cost;
+            }
         }
-
-
     }
 }

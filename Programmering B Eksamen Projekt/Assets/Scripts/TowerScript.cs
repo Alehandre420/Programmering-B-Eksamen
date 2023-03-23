@@ -8,13 +8,20 @@ public class TowerScript : MonoBehaviour
     float aoeDamage;
     float singleDamage;
     public float atkSpeed;
+    public float aoeRange;
+    public float singleRange;
     public float cost;
+    public LayerMask towerMask;
     public List<GameObject> enemyList;
     public List<float> enemyHealth;
     public bool isAOE;
     bool isInterrupted;
+    CapsuleCollider towerCollider;
 
-
+    private void Awake()
+    {
+        towerCollider = GetComponent<CapsuleCollider>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Enemy") && !enemyList.Contains(other.gameObject))
@@ -65,7 +72,7 @@ public class TowerScript : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         for (int i = 0; i < enemyList.Count; i++)
@@ -78,14 +85,22 @@ public class TowerScript : MonoBehaviour
         }
         if (isAOE)
         {
-            aoeDamage = damage / 2;
+            towerCollider.radius = aoeRange;
+            aoeDamage = damage;
             aoeAttack(aoeDamage);
         }
         else
         {
-            singleDamage = damage * 2;
+            towerCollider.radius = singleRange;
+            singleDamage = damage * 1.5f;
             singleAttack(singleDamage);
         }
-        
+        Ray rayToMouse = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(rayToMouse, out hit, Mathf.Infinity, towerMask) && Input.GetMouseButtonDown(1))
+        {
+            
+        }
     }
 }
