@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 2
   atkSpeed: 1
-  cost: 0
+  cost: 30
   enemyList: []
   enemyHealth: []
+  isAOE: 0
