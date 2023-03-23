@@ -103,13 +103,14 @@ public class TowerScript : MonoBehaviour
 
         if (Physics.Raycast(rayToMouse, out hit, Mathf.Infinity, towerMask) && Input.GetMouseButtonDown(1))
         {
-            if (btn.activeSelf)
+            if (btn.activeInHierarchy)
             {
                 print("farmor");
                 btn.SetActive(false);
             }
-            if (!btn.activeSelf)
+            else if (!btn.activeInHierarchy)
             {
+                print("morfar");
                 btn.SetActive(true);
             }
         }
