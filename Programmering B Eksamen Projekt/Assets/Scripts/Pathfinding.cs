@@ -6,6 +6,7 @@ public class Pathfinding : MonoBehaviour
 {
     HomeStats hs;
     EnemyStats stats;
+    WaveSystem ws;
 
     float speed;
     float worth;
@@ -23,6 +24,7 @@ public class Pathfinding : MonoBehaviour
     {
         hs = FindObjectOfType<HomeStats>();
         stats = FindObjectOfType<EnemyStats>();
+        ws = FindObjectOfType<WaveSystem>();
         path = GameObject.FindGameObjectsWithTag("Path");
 
         //getting the stats from the enemy
@@ -92,7 +94,8 @@ public class Pathfinding : MonoBehaviour
         if (other.gameObject.CompareTag("Home"))
         {
             hs.health -= damage;
-            stats.currentHealth = 0;
+            Destroy(gameObject);
+            ws.enemies.Remove(gameObject);
         }
 
         if (other.gameObject.CompareTag("Bezier"))
