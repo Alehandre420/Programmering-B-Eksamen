@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TowerScript : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class TowerScript : MonoBehaviour
     public float singleRange;
     public float cost;
     public LayerMask towerMask;
+    public GameObject btn;
     public List<GameObject> enemyList;
     public List<float> enemyHealth;
     public bool isAOE;
@@ -21,6 +23,7 @@ public class TowerScript : MonoBehaviour
     private void Awake()
     {
         towerCollider = GetComponent<CapsuleCollider>();
+        
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -100,7 +103,15 @@ public class TowerScript : MonoBehaviour
 
         if (Physics.Raycast(rayToMouse, out hit, Mathf.Infinity, towerMask) && Input.GetMouseButtonDown(1))
         {
-            
+            if (btn.activeSelf)
+            {
+                print("farmor");
+                btn.SetActive(false);
+            }
+            if (!btn.activeSelf)
+            {
+                btn.SetActive(true);
+            }
         }
     }
 }
