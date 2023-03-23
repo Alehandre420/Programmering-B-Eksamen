@@ -13,7 +13,6 @@ public class TowerScript : MonoBehaviour
     public float singleRange;
     public float cost;
     public LayerMask towerMask;
-    public GameObject btn;
     public List<GameObject> enemyList;
     public List<float> enemyHealth;
     public bool isAOE;
@@ -98,21 +97,6 @@ public class TowerScript : MonoBehaviour
             singleDamage = damage * 1.5f;
             singleAttack(singleDamage);
         }
-        Ray rayToMouse = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-
-        if (Physics.Raycast(rayToMouse, out hit, Mathf.Infinity, towerMask) && Input.GetMouseButtonDown(1))
-        {
-            if (btn.activeInHierarchy)
-            {
-                print("farmor");
-                btn.SetActive(false);
-            }
-            else if (!btn.activeInHierarchy)
-            {
-                print("morfar");
-                btn.SetActive(true);
-            }
-        }
+        
     }
 }

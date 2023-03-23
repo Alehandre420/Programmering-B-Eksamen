@@ -9,6 +9,11 @@ public class ButtonScript : MonoBehaviour
     {
         
     }
+    
+    public void Upgrade()
+    {
+
+    }
 
     // Update is called once per frame
     void Update()
