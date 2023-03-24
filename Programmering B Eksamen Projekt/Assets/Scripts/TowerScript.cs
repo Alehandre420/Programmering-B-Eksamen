@@ -58,13 +58,14 @@ public class TowerScript : MonoBehaviour
 
     private void aoeAttack(float tempDamage)
     {
-        for (int i = 0; i < enemyList.Count; i++)
+        if (!isInterrupted)
         {
-            if (!isInterrupted)
+            for (int i = 0; i < enemyList.Count; i++)
             {
                 StartCoroutine(attackEnemy(i, tempDamage));
             }
         }
+        
     }
     private void singleAttack(float tempDamage)
     {
@@ -74,6 +75,17 @@ public class TowerScript : MonoBehaviour
         }
     }
 
+    public void aoeChange()
+    {
+        if (isAOE)
+        {
+            isAOE = false;
+        }
+        else if (!isAOE)
+        {
+            isAOE = true;
+        }
+    }
     
     void Update()
     {
@@ -85,13 +97,22 @@ public class TowerScript : MonoBehaviour
                 enemyHealth.RemoveAt(i);
             }
         }
+        for (int i = 0; i < enemyHealth.Count; i++)
+        {
+            if (enemyList.Count < 1)
+            {
+                enemyHealth.RemoveAt(i);
+            }
+        }
+        
+        
         if (isAOE)
         {
             towerCollider.radius = aoeRange;
             aoeDamage = damage;
             aoeAttack(aoeDamage);
         }
-        else
+        else if (!isAOE)
         {
             towerCollider.radius = singleRange;
             singleDamage = damage * 1.5f;
