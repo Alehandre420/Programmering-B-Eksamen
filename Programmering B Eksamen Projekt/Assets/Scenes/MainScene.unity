@@ -2950,7 +2950,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basic: {fileID: 5302657492336609471, guid: 93cc3c086589b364abd845344ce3ab25, type: 3}
+  speed: {fileID: 5302657492336609471, guid: 088103cf313e9da4e9f16ce25db37a36, type: 3}
+  tank: {fileID: 5302657492336609471, guid: 5525fd95d38f5fc4b9b81fcfe1ea1a47, type: 3}
   enemies: []
+  currentWave: 1
   wave: {fileID: 858991973}
   timeBetweenEnemies: 0.8
 --- !u!1 &1242848488
