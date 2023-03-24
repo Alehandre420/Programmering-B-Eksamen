@@ -9,6 +9,8 @@ public class WaveSystem : MonoBehaviour
     public List<GameObject> enemies;
     int currentWave = 1;
     public TMP_Text wave;
+    public float timeBetweenEnemies;
+    float timeBetweenWaves = 0f;
 
     bool ongoingWave;
     bool waiting;
@@ -31,11 +33,19 @@ public class WaveSystem : MonoBehaviour
         }
         else if (enemies.Count <= 0 && !waiting)
         {
-            StartCoroutine(waitBetweenWaves(5));
+            timeBetweenWaves += Time.deltaTime;
+
+            if (enemies.Count > 0)
+            {
+                timeBetweenWaves = 0f;
+            }
+            else if (timeBetweenWaves > timeBetweenEnemies)
+            {
+                StartCoroutine(waitBetweenWaves(5));
+            }
         }
 
         wave.text = $"wave {currentWave.ToString()} / 100";
-
         if (currentWave >= 100)
         {
             print("you did it");
@@ -66,7 +76,7 @@ public class WaveSystem : MonoBehaviour
         {
             GameObject enemy = Instantiate(basic, transform);
             enemies.Add(enemy);
-            yield return new WaitForSeconds(0.8f);
+            yield return new WaitForSeconds(timeBetweenEnemies);
         }
     }
 }
