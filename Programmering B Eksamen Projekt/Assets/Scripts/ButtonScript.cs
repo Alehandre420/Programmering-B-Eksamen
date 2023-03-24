@@ -17,10 +17,10 @@ public class ButtonScript : MonoBehaviour
     {
         if (gameManager.money >= towerScript.cost * 0.5f)
         {
-            towerScript.damage = towerScript.damage * 1.2f;
-            towerScript.atkSpeed = towerScript.atkSpeed * 1.5f;
+            towerScript.damage = towerScript.damage * 1.1f;
+            towerScript.atkSpeed = towerScript.atkSpeed * 1.1f;
             gameManager.money = gameManager.money - towerScript.cost * 0.5f;
-            towerScript.cost = towerScript.cost * 2f;
+            towerScript.cost = towerScript.cost * 1.2f;
         }
         else
         {
