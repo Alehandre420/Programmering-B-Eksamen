@@ -13,7 +13,7 @@ public class WaveSystem : MonoBehaviour
     float timeBetweenWaves = 0f;
 
     bool ongoingWave;
-    bool waiting;
+    bool waiting = true;
     GameManager gm;
 
     // Start is called before the first frame update
@@ -33,16 +33,7 @@ public class WaveSystem : MonoBehaviour
         }
         else if (enemies.Count <= 0 && !waiting)
         {
-            timeBetweenWaves += Time.deltaTime;
-
-            if (enemies.Count > 0)
-            {
-                timeBetweenWaves = 0f;
-            }
-            else if (timeBetweenWaves > timeBetweenEnemies)
-            {
-                StartCoroutine(waitBetweenWaves(5));
-            }
+            StartCoroutine(waitBetweenWaves(5));
         }
 
         wave.text = $"wave {currentWave.ToString()} / 100";
@@ -56,27 +47,27 @@ public class WaveSystem : MonoBehaviour
     private IEnumerator waitBetweenWaves(float waitTime)
     {
         waiting = true;
+        
         yield return new WaitForSeconds(waitTime);
-        if (enemies.Count <= 0)
+        if (currentWave < 100)
         {
-            ongoingWave = false;
-            if (currentWave < 100)
-            {
-                currentWave += 1;
-            }
-            gm.money += Mathf.Round(5 * currentWave / 3);
+           currentWave += 1;
+            print($"wave {currentWave} has started");
         }
-        waiting = false;
+        gm.money += Mathf.Round(5 * currentWave / 3);
+        ongoingWave = false;
     }
 
     private IEnumerator SpawnAndWait(float amount)
     {
         ongoingWave = true;
+        
         for (int i = 0; i < amount; i++)
         {
             GameObject enemy = Instantiate(basic, transform);
             enemies.Add(enemy);
             yield return new WaitForSeconds(timeBetweenEnemies);
         }
+        waiting = false;
     }
 }
