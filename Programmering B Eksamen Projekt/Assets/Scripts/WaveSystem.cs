@@ -12,7 +12,6 @@ public class WaveSystem : MonoBehaviour
     public int currentWave = 1;
     public TMP_Text wave;
     public float timeBetweenEnemies;
-    float timeBetweenWaves = 0f;
 
     bool ongoingWave;
     bool waiting = true;
@@ -86,7 +85,7 @@ public class WaveSystem : MonoBehaviour
     }
     private IEnumerator SpeedSpawnAndWait(float amount)
     {
-        for (int i = 0; i < Mathf.Floor(amount / 2); i++)
+        for (int i = 0; i < Mathf.Floor(amount / 1.5f); i++)
         {
             yield return new WaitForSeconds(timeBetweenEnemies * 1.5f);
             GameObject speedEnemy = Instantiate(speed, transform);
