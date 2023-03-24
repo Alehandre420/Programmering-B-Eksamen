@@ -93,7 +93,7 @@ public class Pathfinding : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Home"))
         {
-            hs.health -= damage;
+            hs.health -= Mathf.Floor(damage);
             Destroy(gameObject);
             ws.enemies.Remove(gameObject);
         }

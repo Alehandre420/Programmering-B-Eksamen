@@ -153,7 +153,7 @@ GameObject:
   - component: {fileID: 2481277294397188311}
   - component: {fileID: 4929254622313036845}
   m_Layer: 0
-  m_Name: Basic Enemy
+  m_Name: Tank Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -203,7 +203,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c6460a33fb29ff44f885fa69dbf64b65, type: 2}
+  - {fileID: 2100000, guid: 738956de608a1df43bf201a38a9f7668, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -267,12 +267,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e28f14450b2d83f4684ef862a6ffdd68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 25
   currentHealth: 0
-  speed: 1
-  worth: 4
-  damage: 3
-  scale: 1.5
+  speed: 3
+  worth: 20
+  damage: 10
+  scale: 3
 --- !u!114 &4929254622313036845
 MonoBehaviour:
   m_ObjectHideFlags: 0
