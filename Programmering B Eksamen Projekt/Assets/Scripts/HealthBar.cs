@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     EnemyStats stats;
-    float maxH;
-    float curH;
     Slider healthBar;
     Camera target;
 
@@ -15,9 +13,10 @@ public class HealthBar : MonoBehaviour
     void Start()
     {
         stats = GetComponentInParent<EnemyStats>();
-        maxH = stats.maxHealth;
         target = FindObjectOfType<Camera>();
         healthBar = GetComponent<Slider>();
+
+        healthBar.maxValue = stats.maxHealth;
     }
 
     // Update is called once per frame
@@ -25,10 +24,6 @@ public class HealthBar : MonoBehaviour
     {
         transform.LookAt(target.transform);
 
-        curH = stats.currentHealth;
-        healthBar.maxValue = maxH;
-        healthBar.value = curH;
-        
-
+        healthBar.value = stats.currentHealth;
     }
 }
