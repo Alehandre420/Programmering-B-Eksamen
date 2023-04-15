@@ -210,8 +210,6 @@ public class TowerScript : MonoBehaviour
                 enemyHealth.RemoveAt(i);
             }
         }
-        
-
         if (isAOE)
         {
             towerCollider.radius = aoeRange;
@@ -224,9 +222,5 @@ public class TowerScript : MonoBehaviour
             singleDamage = damage * 1.5f;
             singleAttack(singleDamage);
         }
-
-        
-
-
     }
 }
