@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,11 +19,24 @@ public class TowerScript : MonoBehaviour
     public bool isAOE;
     bool isInterrupted;
     CapsuleCollider towerCollider;
+    TMP_Text levelText;
+    ButtonScript buttonScript;
+    LevelTextScript levelTextScript;
 
     private void Awake()
     {
         towerCollider = GetComponent<CapsuleCollider>();
-        
+        buttonScript = transform.GetComponentInChildren<ButtonScript>();
+        levelTextScript = transform.GetComponentInChildren<LevelTextScript>();
+        levelText = levelTextScript.gameObject.GetComponent<TMP_Text>();
+        /*for (int i = 0; i < transform.hierarchyCount; i++)
+        {
+            print("hej");
+            if (transform.GetChild(i).CompareTag("LevelTag"))
+            {
+                levelText = transform.GetChild(i).GetComponent<TextMeshPro>();
+            }
+        }*/
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -89,6 +103,7 @@ public class TowerScript : MonoBehaviour
     
     void Update()
     {
+        levelText.text = "Level " + buttonScript.level;
         for (int i = 0; i < enemyList.Count; i++)
         {
             if (enemyList[i] == null)
@@ -105,7 +120,7 @@ public class TowerScript : MonoBehaviour
             }
         }
         
-        
+
         if (isAOE)
         {
             towerCollider.radius = aoeRange;

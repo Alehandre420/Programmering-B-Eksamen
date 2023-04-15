@@ -9,6 +9,7 @@ TagManager:
   - Path
   - Enemy
   - Bezier
+  - LevelTag
   layers:
   - Default
   - TransparentFX

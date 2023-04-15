@@ -6,11 +6,13 @@ public class ButtonScript : MonoBehaviour
 {
     TowerScript towerScript;
     GameManager gameManager;
+    public int level;
     
     private void Awake()
     {
         towerScript = transform.GetComponentInParent<TowerScript>();
         gameManager = FindObjectOfType<GameManager>();
+        level = 1;
     }
 
     public void Upgrade()
@@ -21,6 +23,7 @@ public class ButtonScript : MonoBehaviour
             towerScript.atkSpeed *= 1.1f;
             gameManager.money -= Mathf.Round(towerScript.cost * 0.5f);
             towerScript.cost *= 1.2f;
+            level++;
         }
         else
         {
