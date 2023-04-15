@@ -14,6 +14,8 @@ public class EnemyStats : MonoBehaviour
     GameManager gm;
     WaveSystem ws;
 
+    public float timeAlive;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,8 @@ public class EnemyStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timeAlive += Time.deltaTime / speed;
+
         if (currentHealth <= 0)
         {
             gm.money += worth;

@@ -23,20 +23,18 @@ public class TowerScript : MonoBehaviour
     ButtonScript buttonScript;
     LevelTextScript levelTextScript;
 
+    bool attackFirst;
+    bool attackLast;
+    bool attackStrong;
+
     private void Awake()
     {
         towerCollider = GetComponent<CapsuleCollider>();
+
         buttonScript = transform.GetComponentInChildren<ButtonScript>();
         levelTextScript = transform.GetComponentInChildren<LevelTextScript>();
         levelText = levelTextScript.gameObject.GetComponent<TMP_Text>();
-        /*for (int i = 0; i < transform.hierarchyCount; i++)
-        {
-            print("hej");
-            if (transform.GetChild(i).CompareTag("LevelTag"))
-            {
-                levelText = transform.GetChild(i).GetComponent<TextMeshPro>();
-            }
-        }*/
+        attackFirst = true;
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -44,6 +42,7 @@ public class TowerScript : MonoBehaviour
         {
             enemyList.Add(other.gameObject);
             enemyHealth.Add(other.GetComponent<EnemyStats>().currentHealth);
+            bubbleSort();
         }
     }
 
@@ -53,6 +52,7 @@ public class TowerScript : MonoBehaviour
         {
             enemyList.Remove(other.gameObject);
             enemyHealth.Remove(other.GetComponent<EnemyStats>().currentHealth);
+            bubbleSort();
         }
     }
 
@@ -100,7 +100,98 @@ public class TowerScript : MonoBehaviour
             isAOE = true;
         }
     }
+
+    public void changeSort()
+    {
+        if (attackFirst)
+        {
+            attackFirst = false;
+            attackLast = true;
+        }
+        else if (attackLast)
+        {
+            attackLast = false;
+            attackStrong = true;
+        }
+        else if (attackStrong)
+        {
+            attackStrong = false;
+            attackFirst = true;
+        }
+
+        bubbleSort();
+    }
     
+    public void bubbleSort()
+    {
+        int n = enemyList.Count;
+        bool swapped = false;
+
+        if (attackFirst)
+        {
+            for (int i = 1; i < n - 1; i++)
+            {
+                if (enemyList[i - 1].GetComponent<EnemyStats>().timeAlive < enemyList[i].GetComponent<EnemyStats>().timeAlive)
+                {
+                    float timp = enemyHealth[i];
+                    GameObject temp = enemyList[i];
+
+                    enemyHealth[i - 1] = enemyHealth[i];
+                    enemyList[i - 1] = enemyList[i];
+
+                    enemyHealth[i] = timp;
+                    enemyList[i] = temp;
+
+                    swapped = true;
+                }
+            }
+        }
+        else if (attackLast)
+        {
+            for (int i = 1; i < n - 1; i++)
+            {
+                if (enemyList[i - 1].GetComponent<EnemyStats>().timeAlive > enemyList[i].GetComponent<EnemyStats>().timeAlive)
+                {
+                    float timp = enemyHealth[i];
+                    GameObject temp = enemyList[i];
+
+                    enemyHealth[i - 1] = enemyHealth[i];
+                    enemyList[i - 1] = enemyList[i];
+
+                    enemyHealth[i] = timp;
+                    enemyList[i] = temp;
+
+                    swapped = true;
+                }
+            }
+        }
+        else if (attackStrong)
+        {
+            for (int i = 1; i < n - 1; i++)
+            {
+                if (enemyList[i - 1].GetComponent<EnemyStats>().maxHealth < enemyList[i].GetComponent<EnemyStats>().maxHealth)
+                {
+                    float timp = enemyHealth[i];
+                    GameObject temp = enemyList[i];
+
+                    enemyHealth[i - 1] = enemyHealth[i];
+                    enemyList[i - 1] = enemyList[i];
+
+                    enemyHealth[i] = timp;
+                    enemyList[i] = temp;
+
+                    swapped = true;
+                }
+            }
+        }
+
+        if (swapped)
+        {
+            bubbleSort();
+        }
+
+    }
+
     void Update()
     {
         levelText.text = "Level " + buttonScript.level;
@@ -133,6 +224,9 @@ public class TowerScript : MonoBehaviour
             singleDamage = damage * 1.5f;
             singleAttack(singleDamage);
         }
+
         
+
+
     }
 }
