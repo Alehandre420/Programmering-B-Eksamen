@@ -19,10 +19,16 @@ public class TowerScript : MonoBehaviour
     bool isInterrupted;
     CapsuleCollider towerCollider;
 
+    bool attackFirst;
+    bool attackLast;
+    bool attackStrong;
+
     private void Awake()
     {
         towerCollider = GetComponent<CapsuleCollider>();
-        
+        attackFirst = true;
+
+
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -30,6 +36,7 @@ public class TowerScript : MonoBehaviour
         {
             enemyList.Add(other.gameObject);
             enemyHealth.Add(other.GetComponent<EnemyStats>().currentHealth);
+            bubbleSort();
         }
     }
 
@@ -39,6 +46,7 @@ public class TowerScript : MonoBehaviour
         {
             enemyList.Remove(other.gameObject);
             enemyHealth.Remove(other.GetComponent<EnemyStats>().currentHealth);
+            bubbleSort();
         }
     }
 
@@ -86,7 +94,98 @@ public class TowerScript : MonoBehaviour
             isAOE = true;
         }
     }
+
+    public void changeSort()
+    {
+        if (attackFirst)
+        {
+            attackFirst = false;
+            attackLast = true;
+        }
+        else if (attackLast)
+        {
+            attackLast = false;
+            attackStrong = true;
+        }
+        else if (attackStrong)
+        {
+            attackStrong = false;
+            attackFirst = true;
+        }
+
+        bubbleSort();
+    }
     
+    public void bubbleSort()
+    {
+        int n = enemyList.Count;
+        bool swapped = false;
+
+        if (attackFirst)
+        {
+            for (int i = 1; i < n - 1; i++)
+            {
+                if (enemyList[i - 1].GetComponent<EnemyStats>().timeAlive < enemyList[i].GetComponent<EnemyStats>().timeAlive)
+                {
+                    float timp = enemyHealth[i];
+                    GameObject temp = enemyList[i];
+
+                    enemyHealth[i - 1] = enemyHealth[i];
+                    enemyList[i - 1] = enemyList[i];
+
+                    enemyHealth[i] = timp;
+                    enemyList[i] = temp;
+
+                    swapped = true;
+                }
+            }
+        }
+        else if (attackLast)
+        {
+            for (int i = 1; i < n - 1; i++)
+            {
+                if (enemyList[i - 1].GetComponent<EnemyStats>().timeAlive > enemyList[i].GetComponent<EnemyStats>().timeAlive)
+                {
+                    float timp = enemyHealth[i];
+                    GameObject temp = enemyList[i];
+
+                    enemyHealth[i - 1] = enemyHealth[i];
+                    enemyList[i - 1] = enemyList[i];
+
+                    enemyHealth[i] = timp;
+                    enemyList[i] = temp;
+
+                    swapped = true;
+                }
+            }
+        }
+        else if (attackStrong)
+        {
+            for (int i = 1; i < n - 1; i++)
+            {
+                if (enemyList[i - 1].GetComponent<EnemyStats>().maxHealth < enemyList[i].GetComponent<EnemyStats>().maxHealth)
+                {
+                    float timp = enemyHealth[i];
+                    GameObject temp = enemyList[i];
+
+                    enemyHealth[i - 1] = enemyHealth[i];
+                    enemyList[i - 1] = enemyList[i];
+
+                    enemyHealth[i] = timp;
+                    enemyList[i] = temp;
+
+                    swapped = true;
+                }
+            }
+        }
+
+        if (swapped)
+        {
+            bubbleSort();
+        }
+
+    }
+
     void Update()
     {
         for (int i = 0; i < enemyList.Count; i++)
@@ -118,6 +217,9 @@ public class TowerScript : MonoBehaviour
             singleDamage = damage * 1.5f;
             singleAttack(singleDamage);
         }
+
         
+
+
     }
 }
