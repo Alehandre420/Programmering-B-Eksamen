@@ -59,6 +59,7 @@ public class TowerScript : MonoBehaviour
     IEnumerator attackEnemy(int i, float tempDamage)
     {
         isInterrupted = true;
+        enemyHealth[i] = enemyList[i].GetComponent<EnemyStats>().currentHealth;
         enemyHealth[i] -= tempDamage;
         enemyList[i].GetComponent<EnemyStats>().currentHealth = enemyHealth[i];
         if (enemyHealth[i] <= 0)
