@@ -3671,6 +3671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   hp: {fileID: 580860441}
+  camra: {fileID: 1033115327}
 --- !u!1 &1537922151
 GameObject:
   m_ObjectHideFlags: 0
